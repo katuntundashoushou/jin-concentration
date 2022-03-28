@@ -1,0 +1,228 @@
+  /*navigation bar style*/
+.navbar {
+    overflow: hidden;
+    background-color: rgb(32, 116, 43);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 22px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 22px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: rgb(53, 156, 22);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    box-shadow: 0px 11px 22px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 18px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #3e8e41;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41ba}
+  
+  .button:active {
+    background-color: #3e8e41ba;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /*image side by side*/
+
+  .iconDetails {
+    margin-left:2%;
+    margin-right:2%;
+   float:left; 
+   height:500px;
+   width:400px; 
+   } 
+   
+   .container2 {
+      margin-right:2%;
+       width:auto;
+       height:auto;
+       padding:2%;
+   }
+
+    /*button*/
+    .button {
+  position: relative;
+  background-color: #3e8e41ba;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #3e8e41;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+    /*checkbutton*/
+    .check_button {
+      position: relative;
+      background-color: #3e8e41;
+      border: none;
+      font-size: 14px;
+      color: #FFFFFF;
+      padding: 10px;
+      width: 80px;
+      text-align: center;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    .check_button:after {
+      content: "";
+      background: #3e8e41;
+      display: block;
+      position: absolute;
+      padding-top: 300%;
+      padding-left: 350%;
+      margin-left: -20px!important;
+      margin-top: -120%;
+      opacity: 0;
+      transition: all 0.8s
+    }
+    
+    .check_button:active:after {
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      transition: 0s
+    }
+    
+
+    /*side navigation*/
+    .sidebar {
+      margin-top: 50px;
+      width: 160px;
+      position: fixed;
+      z-index: 1;
+      top: 400px;
+      left: 1300px;
+      background-color: #3e8e41;
+      overflow-x: hidden;
+      padding-top: 16px;
+    }
+    
+    .sidebar a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #f1f1f1;
+      display: block;
+    }
+    
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    .main {
+      margin-left: 160px; /* Same as the width of the sidenav */
+      padding: 0px 10px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+    }
+
+    /*2 images format*/
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+    
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
